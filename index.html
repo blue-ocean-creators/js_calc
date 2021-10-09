@@ -9,7 +9,11 @@
 <title>js_calc</title>
 <script>
 
-if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) )
+if( /iPad/i.test( navigator.userAgent ) )
+  {
+  location.href = 'ipad.html';
+  }
+else if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) )
   {
   location.href = 'mobile.html';
   }
