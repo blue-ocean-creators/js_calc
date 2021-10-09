@@ -9,16 +9,13 @@
 <title>js_calc</title>
 <script>
 
-const w = window.innerWidth;
-alert( 'width = ' + w.toString() );
-
-if( w > 850 )
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent ) )
   {
-  location.href = 'desktop.html';
+  location.href = 'mobile.html';
   }
 else
   {
-  location.href = 'mobile.html';
+  location.href = 'desktop.html';
   }
 
 </script>
