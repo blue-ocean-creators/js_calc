@@ -1,4 +1,6 @@
 
+// (c) 2021 Blue Ocean Creators
+
 const textarea_code = document.querySelector( '#code' );
 const textarea_output = document.querySelector( '#output' );
 
