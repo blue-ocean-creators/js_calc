@@ -9,17 +9,10 @@
 <title>js_calc</title>
 <script>
 
-window.desktopcheck = function()
-  {
-  var check = false;
-  if( window.innerWidth > 850 )
-    {
-    check=true;
-    }
-  return check;
-  }
+const w = window.innerWidth;
+alert( 'width = ' + w.toString() );
 
-if( window.desktopcheck() )
+if( w > 850 )
   {
   location.href = 'desktop.html';
   }
