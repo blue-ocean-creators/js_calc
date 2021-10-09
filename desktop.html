@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--------------------------------------------------------------------->
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>js_calc</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<script src="doeval.js" defer></script>
+
+<style>
+  :root
+    {
+    --fsize1: 18pt;
+    --psize1: 8pt;
+    }
+  body
+    {
+    font-family: 'Inconsolata', monospace;
+    font-size: var(--fsize1);
+    }
+  .header
+    {
+    width: 98%;
+    padding: var(--psize1);
+    color: white;
+    background-color: #2a52be;
+    text-align: center;
+    font-weight: bold;
+    }
+  .maincontainer
+    {
+    width: 98%;
+    padding: var(--psize1);
+    color: black;
+    background-color: whitesmoke;
+    text-align: left;
+    font-weight: bold;
+    }
+  .rightfloat
+    {
+    text-align: right;
+    float: right;
+    }
+  .center
+    {
+    text-align: center;
+    }
+  .span_normal
+    {
+    line-height: 150%;
+    }
+  textarea
+    {
+    color: white;
+    background-color: black;
+    width: 100%;
+    font-family: 'Inconsolata', monospace;
+    font-size: var(--fsize1);
+    overflow-y: scroll;
+    }
+  .textarea1
+    {
+    height: calc( var(--fsize1)*10.8 );
+    }
+  .textarea2
+    {
+    height: calc( var(--fsize1)*5.4 );
+    }
+  button
+    {
+    width: calc( var(--fsize1)*6 );
+    height: calc( var(--fsize1)*1.6 );
+    font-family: 'Inconsolata', monospace;
+    font-size: var(--fsize1);
+    font-weight: bold;
+    }
+  .footer
+    {
+    width: 98%;
+    padding: var(--psize1);
+    color: white;
+    background-color: #2a52be;
+    font-size: var(--fsize1);
+    text-align: center;
+    }
+</style>
+
+</head>
+
+<!--------------------------------------------------------------------->
+
+<body>
+
+<div class="header">
+  js_calc
+</div>
+
+<div class="maincontainer">
+  <span class="span_normal"><span class="rightfloat"><a href="help.html">Help</a></span>
+  Input:</span><br>
+  <span class="span_normal">
+    <textarea id="code" class="textarea1"></textarea>
+  </span><br>
+  <div class="center">
+    <button id="calc_button">Calculate</button>
+  </div>
+  <span class="span_normal">Output:</span><br>
+  <span class="span_normal">
+    <textarea id="output" class="textarea2" readonly></textarea>
+  </span><br>
+</div>
+
+<div class="footer">
+  &copy; 2021 Blue Ocean Creators
+</div>
+  
+</body>
+
+<!--------------------------------------------------------------------->
+
+</html>
