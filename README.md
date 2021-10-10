@@ -47,4 +47,6 @@ The only point that is tedious in the JavaScript syntax for this purpose is the 
 <ul>
   <li>random() = Math.random()</li>
 </ul>
+------
+
 &copy; 2021 Blue Ocean Creators
